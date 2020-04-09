@@ -1,0 +1,92 @@
+//vendor
+@import "vendor/normalize.css";
+@import "vendor/bootstrap.min.css";
+
+//common
+@import "common/fonts";
+@import "common/general";
+
+//header
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,.2);
+  padding: 15px 0;
+  z-index: 999;
+  color: white;
+  transition: all .3s;
+  .logo {
+    line-height: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: white;
+        &:hover, &:focus, &:active {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+header.active {
+  padding: 10px 0;
+  background: rgba(0,0,0,1);
+  transition: all .3s;
+  .logo {
+    line-height: 15px;
+    font-size: 16px;
+    transition: all .3s;
+  }
+}
+
+//first screen
+.first-screen {
+  position: relative;
+  .row {
+    min-height: 100vh;
+    .text-block {
+      color: #fff;
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+  #parallax {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/static/images/bg-parallax2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.8);
+      z-index: -1;
+    }
+  }
+}
+
