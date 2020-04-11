@@ -1,6 +1,7 @@
 //vendor
 @import "vendor/normalize.css";
 @import "vendor/bootstrap.min.css";
+@import "vendor/particles.css";
 
 //common
 @import "common/fonts";
@@ -194,6 +195,7 @@ section {
       background: #040e27;
       color: white;
       padding: 10px 25px;
+      display: block;
       &:hover, &:active, &:focus {
         outline: none;
         text-decoration: none;

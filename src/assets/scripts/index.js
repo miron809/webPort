@@ -1,7 +1,3 @@
-const header = document.getElementById('header');
+import './buttonAnimation';
+import './fixedHeader';
 
-function fixedHeader() {
-  window.scrollY > 0 ? header.classList.add('active') : header.classList.remove('active');
-}
-
-window.addEventListener('scroll', fixedHeader);
