@@ -4,20 +4,15 @@
   <main id="main">
 
     <section class="first-screen content__section">
-      <h2 class="content__text"></h2>
-      <div class="container">
-        <div class="row align-items-center text-left">
-          <div class="text-block col-lg-9 col-xl-9">
-            <span class="text-uppercase">welcome to my page</span>
-            <h1>WEB DEVELOPMENT TUTORIALS & COURSES</h1>
-          </div>
-        </div>
-      </div>
+      <span class="welcome show-welcome">Welcome to my page</span>
+      <h2 class="section-title first-title top content__text">
+        Web development
+      </h2>
       <div id="parallax"></div>
     </section>
 
     <section id="angularSection" class="port-section content__section">
-      <h2 class="section-title content__text">Angular</h2>
+      <h2 class="section-title bottom content__text">Angular</h2>
       <div class="content__link">
         <div class="grid-layout">
           <%= _.template(require('./templates/projectJs.html').default)() %>
@@ -26,7 +21,7 @@
     </section>
 
     <section id="jsSection"  class="port-section content__section">
-      <h2 class="section-title content__text">JavaScript</h2>
+      <h2 class="section-title bottom content__text">JavaScript</h2>
       <div class="content__link">
         <div class="grid-layout">
           <%= _.template(require('./templates/projectJs.html').default)() %>
@@ -35,7 +30,7 @@
     </section>
 
     <section id="htmlSection"  class="port-section content__section">
-      <h2 class="section-title content__text">Html/Css/Js</h2>
+      <h2 class="section-title bottom content__text">Html/Css/Js</h2>
       <div class="content__link">
         <div class="grid-layout">
           <%= _.template(require('./templates/projectHtml.html').default)() %>

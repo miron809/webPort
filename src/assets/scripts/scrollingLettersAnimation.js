@@ -10,6 +10,25 @@ import charming from './vendor/charming.min'
  * Copyright 2018, Codrops
  * http://www.codrops.com
  */
+
+const title = document.querySelector('.first-title');
+const welcomeSpan = document.querySelector('.welcome');
+const vh = Math.round(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+
+function scrollingTitle() {
+  if (window.scrollY > vh * 0.6) {
+    welcomeSpan.classList.remove('show-welcome');
+    title.classList.remove('top');
+    title.classList.add('bottom');
+  } else {
+    welcomeSpan.classList.add('show-welcome');
+    title.classList.add('top');
+    title.classList.remove('bottom');
+  }
+}
+
+window.addEventListener('scroll', scrollingTitle);
+
 {
   const chars = ['$','%','#','@','&','(',')','=','*','/'];
   const charsTotal = chars.length;
