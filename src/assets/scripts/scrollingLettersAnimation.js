@@ -30,7 +30,7 @@ function scrollingTitle() {
 window.addEventListener('scroll', scrollingTitle);
 
 {
-  const chars = ['$','%','#','@','&','(',')','=','*','/'];
+  const chars = ['$','%','#','@','&','=','*','/'];
   const charsTotal = chars.length;
   const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 

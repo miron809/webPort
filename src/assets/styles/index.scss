@@ -170,10 +170,16 @@ section {
   opacity: 1;
 }
 
+.ioapi .content__text {
+  position: fixed;
+  opacity: 0;
+}
+
 .section-title {
   top: 40vh;
   z-index: 1;
   transition: all .3s, opacity 0s;
+  position: absolute;
   &.first-title.top {
     color: white;
     font-size: 60px;
