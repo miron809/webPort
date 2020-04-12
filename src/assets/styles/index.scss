@@ -107,6 +107,7 @@ header.active {
 //first screen
 .first-screen {
   position: relative;
+  z-index: 2;
   .row {
     min-height: 100vh;
     .text-block {
@@ -148,21 +149,38 @@ header.active {
 section {
   margin-bottom: 100px;
 }
+
+.ioapi .content__text {
+  position: fixed;
+  opacity: 0;
+}
+
 .section-title {
   padding-left: 60px;
+  top: 250px;
+  left: 50px;
+  z-index: 1;
   position: relative;
-  margin: 0 0 50px 50px;
   &:before {
     @include redLine(50%, 0);
     transform: translateY(-50%);
   }
 }
 
-
 //projects
+.port-section {
+  max-width: 1900px;
+}
+.content__link {
+  background: #ccc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
   .project-item {
     position: relative;
@@ -174,6 +192,7 @@ section {
     }
     img {
       height: 260px;
+      max-width: 365px;
       object-fit: cover;
       object-position: center;
     }

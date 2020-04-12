@@ -5,14 +5,10 @@ buttonsArr.forEach(button => createAnimation(button));
 
 function createAnimation(button) {
   let particlesOpts = {
-    direction: 'left',
-    size: 5,
-    color: '#040e27',
-    duration: 500,
+    duration: 200,
     easing: 'easeInCubic',
-    particlesAmountCoefficient: 8,
-    speed: 0.4,
-    oscillationCoefficient: 1,
+    particlesAmountCoefficient: 10,
+    oscillationCoefficient: 80,
     complete: () => {
       animationCompleted();
     }
@@ -30,15 +26,11 @@ function createAnimation(button) {
   });
 
   function animationCompleted() {
-    window.open(button.href);
     particles.integrate({
-      duration: 100,
-      easing: 'easeOutSine',
-      complete: () => {
-        return false
-      }
+      complete: () => {}
     });
     buttonVisible = !buttonVisible;
+    window.open(button.href);
   }
 }
 
