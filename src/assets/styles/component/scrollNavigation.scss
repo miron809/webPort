@@ -3,7 +3,7 @@
   top: 40vh;
   left: 20%;
   color: white;
-  transition: all .6s, top 0s;
+  transition: all .3s, top 0s;
   text-transform: uppercase;
   &.is-fixed {
     position: fixed;
@@ -46,7 +46,7 @@
   left: 50px;
   top: 150px;
   color: #212529;
-  transition: all .6s;
+  transition: all .3s;
   text-transform: none;
   h2 {
     font-size: 32px;
