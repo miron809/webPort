@@ -1,0 +1,72 @@
+.scroll-navigation {
+  position: absolute;
+  top: 40vh;
+  left: 20%;
+  color: white;
+  transition: all .6s, top 0s;
+  text-transform: uppercase;
+  &.is-fixed {
+    position: fixed;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      white-space: nowrap;
+      opacity: 0;
+      &.active {
+        opacity: 1;
+      }
+      h2 {
+        font-size: 60px;
+        padding: 0;
+        margin: 0;
+        &:before {
+          @include redLine(100%, 0);
+          transform: translateY(0);
+          transition: all .3s;
+        }
+      }
+    }
+  }
+}
+
+.scroll-navigation.fixed {
+  position: fixed;
+  top: 100px;
+}
+
+.scroll-navigation.scrolling {
+  left: 50px;
+  top: 150px;
+  color: #212529;
+  transition: all .6s;
+  text-transform: none;
+  h2 {
+    font-size: 32px;
+    padding: 0 0 0 60px;
+    &:before {
+      @include redLine(50%, 0);
+      transform: translateY(-50%);
+      transition: all .3s;
+    }
+  }
+}
+
+.welcome {
+  opacity: 1;
+  position: relative;
+  color: white;
+  transition: opacity 1s;
+  white-space: nowrap;
+}
+
+.welcome.hide-welcome {
+  opacity: 0;
+}

@@ -4,47 +4,12 @@
 @import "vendor/particles.css";
 
 //common
+@import "common/variables";
 @import "common/fonts";
 @import "common/general";
 
-//variables
-:root {
-  --redColor: #DF292D;
-}
-
-@mixin redLine($top, $left) {
-  content: '';
-  position: absolute;
-  left: $left;
-  top: $top;
-  width: 50px;
-  height: 7px;
-  background: var(--redColor);
-}
-
-@mixin redLinkTransition() {
-  &:hover, &:focus, &:active {
-    color: var(--redColor);
-    text-decoration: none;
-    outline: none;
-    font-weight: normal;
-    transition-delay: .3s;
-  }
-  &:before {
-    content: attr(data-title);
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    color: var(--redColor);
-    overflow: hidden;
-    max-width: 0;
-    transition: max-width .5s;
-  }
-  &:hover::before {
-    max-width: 100%;
-  }
-}
+//component
+@import "component/scrollNavigation";
 
 //additional classes
 .redLinkTransition {
@@ -146,70 +111,18 @@ header.active {
 }
 
 //section
-section {
-  margin-bottom: 150px;
+section:not(:first-child) {
+  padding-top: 150px;
 }
 
 .ioapi .content__text {
   position: fixed;
   opacity: 0;
-}
-
-.welcome {
-  opacity: 0;
-  position: fixed;
-  top: 37vh;
-  left: 20%;
-  z-index: 2;
-  color: white;
-  text-transform: uppercase;
-  transition: opacity .3s;
-}
-
-.welcome.show-welcome {
-  opacity: 1;
-}
-
-.ioapi .content__text {
-  position: fixed;
-  opacity: 0;
-}
-
-.section-title {
-  top: 40vh;
-  z-index: 1;
-  transition: all .3s, opacity 0s;
-  position: absolute;
-  &.first-title.top {
-    color: white;
-    font-size: 60px;
-    padding: 0;
-    left: 20%;
-    text-transform: uppercase;
-    &:before {
-      @include redLine(100%, 0);
-      transform: translateY(0);
-      transition: all .3s;
-    }
-  }
-  &.bottom {
-    color: #212529;
-    font-size: 32px;
-    padding: 0 0 0 60px;
-    left: 50px;
-    &:before {
-      @include redLine(50%, 0);
-      transform: translateY(-50%);
-      transition: all .3s;
-    }
-  }
 }
 
 //projects
 .port-section {
   max-width: 1900px;
-}
-.content__link {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;

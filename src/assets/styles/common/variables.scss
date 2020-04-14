@@ -1,0 +1,38 @@
+//variables
+:root {
+  --redColor: #DF292D;
+}
+
+@mixin redLine($top, $left) {
+  content: '';
+  position: absolute;
+  left: $left;
+  top: $top;
+  width: 50px;
+  height: 7px;
+  background: var(--redColor);
+}
+
+@mixin redLinkTransition() {
+  &:hover, &:focus, &:active {
+    color: var(--redColor);
+    text-decoration: none;
+    outline: none;
+    font-weight: normal;
+    transition-delay: .3s;
+  }
+  &:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: var(--redColor);
+    overflow: hidden;
+    max-width: 0;
+    transition: max-width .5s;
+  }
+  &:hover::before {
+    max-width: 100%;
+  }
+}
