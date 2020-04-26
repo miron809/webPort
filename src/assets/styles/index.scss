@@ -2,6 +2,7 @@
 @import "vendor/normalize.css";
 @import "vendor/bootstrap.min.css";
 @import "vendor/particles.css";
+@import "vendor/fontawesome.all.min.css";
 
 //common
 @import "common/variables";
@@ -10,6 +11,8 @@
 
 //component
 @import "component/scrollNavigation";
+@import "component/footer";
+@import "component/projectItem";
 
 //additional classes
 .redLinkTransition {
@@ -119,57 +122,3 @@ section:not(:first-child) {
   position: fixed;
   opacity: 0;
 }
-
-//projects
-.port-section {
-  max-width: 1900px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-  .project-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    height: 260px;
-    &:hover .content {
-      left: 0;
-    }
-    img {
-      height: 260px;
-      max-width: 365px;
-      object-fit: cover;
-      object-position: center;
-    }
-    .content {
-      position: absolute;
-      left: -100%;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: rgba(4, 105, 180, 0.8);
-      color: white;
-      transition: left .3s;
-    }
-    .live-button {
-      background: #040e27;
-      color: white;
-      padding: 10px 25px;
-      display: block;
-      &:hover, &:active, &:focus {
-        outline: none;
-        text-decoration: none;
-      }
-    }
-  }
-}
-

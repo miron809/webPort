@@ -15,11 +15,11 @@
 
 @mixin redLinkTransition() {
   &:hover, &:focus, &:active {
-    color: var(--redColor);
+    color: var(--redColor) !important;
     text-decoration: none;
     outline: none;
     font-weight: normal;
-    transition-delay: .3s;
+    transition-delay: .2s;
   }
   &:before {
     content: attr(data-title);
@@ -30,7 +30,7 @@
     color: var(--redColor);
     overflow: hidden;
     max-width: 0;
-    transition: max-width .5s;
+    transition: max-width .3s;
   }
   &:hover::before {
     max-width: 100%;
