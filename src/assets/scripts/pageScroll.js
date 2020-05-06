@@ -1,18 +1,14 @@
-import * as $ from 'jquery';
+const navEl = document.querySelectorAll('.page-scroll');
 
-let $htmlBody = $('html, body'),
-    $pageScrollLink = $('.page-scroll');
+navEl.forEach(el => {
+  const anchor = el.dataset.anchor;
+  const targetSectionOffset = document.getElementById(anchor).offsetTop;
 
-/** Page scroll */
-$pageScrollLink.on('click', function(e){
-  let anchor = $(this),
-    target = anchor.attr('href');
-  pageScroll(target);
-  e.preventDefault();
+  el.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: targetSectionOffset,
+      behavior: 'smooth'
+    });
+  })
 });
-
-function pageScroll(target){
-  $htmlBody.stop().animate({
-    scrollTop: $(target).offset().top - (offset - 1)
-  }, 1000);
-}

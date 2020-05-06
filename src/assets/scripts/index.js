@@ -1,6 +1,6 @@
 import './buttonAnimation';
 import './fixedHeader';
-// import './pageScroll';
+import './pageScroll';
 import './detectSideArrow';
 
 import './scrollingLettersAnimation';
