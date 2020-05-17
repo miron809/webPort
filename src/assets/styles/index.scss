@@ -1,5 +1,6 @@
 //vendor
 @import "vendor/normalize.css";
+@import "vendor/swiper.min.css";
 @import "vendor/bootstrap.min.css";
 @import "vendor/particles.css";
 @import "vendor/fontawesome.all.min.css";
@@ -72,6 +73,10 @@ header.active {
   }
 }
 
+.section-header {
+  display: none;
+}
+
 //first screen
 .first-screen {
   position: relative;
@@ -114,7 +119,7 @@ header.active {
 }
 
 //section
-section:not(:first-child) {
+section {
   padding-top: 150px;
 }
 
@@ -122,3 +127,7 @@ section:not(:first-child) {
   position: fixed;
   opacity: 0;
 }
+
+
+//media
+@import "common/media";

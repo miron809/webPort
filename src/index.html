@@ -15,19 +15,34 @@
       </ul>
     </div>
 
-    <section id="homeSection" class="first-screen content__section">
+    <section id="homeSection" class="first-screen">
+      <div class="header-holder">
+        <h2 class="section-header">
+          <span>Welcome to my page</span> <br>
+          Web development
+        </h2>
+      </div>
       <div id="parallax"></div>
     </section>
 
     <section id="angularSection" class="port-section">
+      <h2 class="section-header">
+        Angular
+      </h2>
         <%= _.template(require('./templates/projectAngular.html').default)() %>
     </section>
 
-    <section id="jsSection"  class="port-section content__section">
+    <section id="jsSection"  class="port-section">
+      <h2 class="section-header">
+        Java Script
+      </h2>
       <%= _.template(require('./templates/projectJs.html').default)() %>
     </section>
 
-    <section id="htmlSection"  class="port-section content__section">
+    <section id="htmlSection"  class="port-section">
+      <h2 class="section-header">
+        Html/Css/JS
+      </h2>
       <%= _.template(require('./templates/projectHtml.html').default)() %>
     </section>
 

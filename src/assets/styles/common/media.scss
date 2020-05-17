@@ -1,0 +1,100 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  header {
+    .logo {
+      font-size: 14px;
+      line-height: normal;
+    }
+    ul li {
+      margin-right: 10px;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+  header.active .logo {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .swiper-container {
+    height: 250px !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 767px) {
+  .swiper-container {
+    height: 350px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 991px) {
+  .swiper-holder {
+    display: block;
+  }
+  .projects {
+    display: none;
+  }
+  .scroll-navigation {
+    display: none;
+  }
+
+  section:not(.first-screen) {
+    padding-top: 50px;
+  }
+  
+  .first-screen {
+    .header-holder {
+      text-align: center;
+      padding: 0 15px;
+    }
+    .section-header {
+      span {
+        font-size: 16px;
+      }
+      color: #fff;
+      text-align: left;
+      font-size: 46px;
+      line-height: 27px;
+      padding: 0;
+      margin: 0;
+      &:before {
+        @include redLine(110%, 0);
+        transform: translateY(0);
+        transition: all .3s;
+      }
+    }
+  }
+  
+  .section-header {
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    &:before {
+      @include redLine(50%, -60px);
+    }
+  }
+
+  .port-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1199px) {
+  .scroll-navigation.scrolling {
+    left: 20px;
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .projects {
+    .project-item {
+      margin: 0 -15px 15px 0;
+    }
+  }
+}
