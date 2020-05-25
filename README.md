@@ -1,5 +1,4 @@
-# webpackConfig - markup
-This config is useful when you just need to create couple of HTML pages using JS, CSS/SCSS files.
+# My new portfolio
 
 #### Prerequisites
   - Node.js
@@ -10,8 +9,8 @@ This config is useful when you just need to create couple of HTML pages using JS
 Start by typing the following commands in your terminal in order to get full package on your machine and starting a local development server with live reload feature.
 
 ```
-> git clone https://github.com/miron809/webpackConfig-markup.git
-> cd webpackConfig-markup
+> git clone https://github.com/miron809/webPort.git
+> cd webPort
 > npm i
 > npm run start
 ```
@@ -64,7 +63,3 @@ Used to generate the final result of compiling src files into build folder witho
 ```
 > npm run dev
 ```
-
-## Thanks
-- [Vladilen Minin](https://github.com/vladilenm/webpack-2020)
-- [Sergienko Anton](https://github.com/Harrix/static-site-webpack-habr/)
