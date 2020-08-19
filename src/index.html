@@ -25,21 +25,21 @@
       <div id="parallax"></div>
     </section>
 
-    <section id="angularSection" class="port-section">
-      <h2 class="section-header">
-        Angular
-      </h2>
-        <%= _.template(require('./templates/projectAngular.html').default)() %>
-    </section>
-
-    <section id="jsSection"  class="port-section">
+    <section id="jsSection" data-projectLinks="projectJs" class="port-section">
       <h2 class="section-header">
         Java Script
       </h2>
       <%= _.template(require('./templates/projectJs.html').default)() %>
     </section>
 
-    <section id="htmlSection"  class="port-section">
+    <section id="angularSection" data-projectLinks="projectAngular" class="port-section">
+      <h2 class="section-header">
+        Angular
+      </h2>
+      <%= _.template(require('./templates/projectAngular.html').default)() %>
+    </section>
+
+    <section id="htmlSection" data-projectLinks="projectHtml" class="port-section">
       <h2 class="section-header">
         Html/Css/JS
       </h2>

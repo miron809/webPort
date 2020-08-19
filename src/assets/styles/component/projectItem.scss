@@ -10,8 +10,8 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    height: auto;
-    max-height: 275px;
+    height: 275px;
+    box-shadow: 0 0 6px -2px #d6d6d6;
     &:hover .content {
       left: 0;
     }
