@@ -43,12 +43,19 @@
           content: '\f08c';
         }
       }
-      &:last-child {
+      &:nth-child(3) {
         width: 31px;
         height: 32px;
         border-radius: 50%;
         i:after {
           content: '\f09b';
+        }
+      }
+      &:nth-child(4) {
+        width: 28px;
+        height: 32px;
+        i:after {
+          content: '\f17e';
         }
       }
       &.top i:after {

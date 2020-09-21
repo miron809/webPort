@@ -39,7 +39,12 @@ const projectLinks = {
     'assets/static/projects/HTML/intent/site/home.html',
     'assets/static/projects/HTML/consalt/site/home.html',
     'http://forin-markup.uain.su:8008/forin/site_name/templates/index.html'
-  ]
+  ],
+  certificates: [
+    'https://www.udemy.com/certificate/UC-9db7cac4-e980-4ea6-ae50-57accfdf9e9f/',
+    'https://www.udemy.com/certificate/UC-10WZIYF3/',
+    'https://www.udemy.com/certificate/UC-380f2e44-2554-4207-8098-50edfe92ba6a/'
+  ],
 };
 
 const projectSections = document.querySelectorAll('.port-section');
