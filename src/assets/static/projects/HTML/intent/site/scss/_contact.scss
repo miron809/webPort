@@ -1,0 +1,97 @@
+.map-wrap {
+  height: 600px;
+  margin-bottom: 30px;
+}
+.contact-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-text-info {
+  flex: 1 1 250px;
+  margin-right: 25px;
+  .text-info-mid {
+    color: $red-color;
+  }
+  .text-info-bot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    a {
+      text-decoration: none;
+      color: $bold-text-color;
+      transition: color .3s;
+      &:hover {
+        text-decoration: none;
+        color: $red-color;
+      }
+    }
+  }
+}
+.form {
+  flex: 4 1 400px;
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    .top-set-input {
+      display: flex;
+      flex: 1 1 100%;
+      flex-wrap: wrap;
+      .left-set-input {
+        flex: 1 1 140px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 16px;
+      }
+      .right-set-input {
+        flex: 1 1 140px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    textarea {
+      flex: 1 1 100%;
+      resize: none;
+      margin: 8px 0 16px;
+      padding: 5px 10px;
+      border: 2px solid $dark-bg-color;
+      transition: all .3s;
+      width: 100%;
+      &:focus {
+        border-color: $red-color;
+        color: $red-color;
+        outline: none;
+      }
+    }
+  }
+}
+.form {
+  input {
+    margin: 8px 0 8px;
+    padding: 5px 10px;
+    border: 2px solid $dark-bg-color;
+    transition: all .3s;
+    color: $gray-text-color;
+    &:focus {
+      border-color: $red-color;
+      color: $red-color;
+      outline: none;
+    }
+  }
+  button {
+    border: none;
+    background: $red-color;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 15px;
+    transition: all .3s;
+    &:focus {
+      box-shadow: inset 0px 0px 6px -1px #000;
+      outline: none;
+    }
+  }
+}

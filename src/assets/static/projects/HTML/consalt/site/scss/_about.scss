@@ -1,0 +1,37 @@
+.about-holder {
+  background: #fff;
+  padding-top: 100px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    line-height: 40px;
+    .about-item {
+      flex: 1 1 250px;
+      text-align: center;
+      transition: all .3s;
+      opacity: .6;
+      border: 1px solid #000000;
+      margin: 10px;
+      padding: 20px 10px;
+      cursor: pointer;
+      .about-icon {
+        transition: color .3s;
+      }
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        border-color: $blue-link-color;
+        .about-icon {
+          color: $blue-link-color;
+        }
+      }
+      .about-title {
+        font-size: 22px;
+      }
+      .about-descr {
+        font-size: 16px;
+      }
+    }
+  }
+}

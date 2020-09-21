@@ -1,0 +1,70 @@
+.video-block {
+  position: relative;
+  margin-bottom: 65px;
+  img {
+    width: 100%;
+  }
+  .video-title {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    h2 {
+      font-size: 50px;
+      font-family: EtelkaMediumProRegular;
+      text-transform: uppercase;
+    }
+    p {
+      color: $blue-color;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: normal;
+      cursor: pointer;
+      display: inline-block;
+      transition: color .3s;
+      &:hover {
+        color: $dark-blue-color;
+      }
+      i.fa-circle-thin {
+
+      }
+      i.fa-play {
+        font-size: 15px;
+      }
+    }
+  }
+}
+//video popup
+.popup-parent {
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+}
+.popup-window {
+  z-index: 101;
+  position: relative;
+  padding-bottom: 34.4%;
+  padding-top: 30px;
+  height: 0;
+  width: 65%;
+  margin: 8% auto 0 auto;
+}
+.popup-window iframe, .popup-window object, .popup-window embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.close-popup {
+  position: absolute;
+  right: -22px;
+  top: -27px;
+  color: $blue-color;
+  cursor: pointer;
+}

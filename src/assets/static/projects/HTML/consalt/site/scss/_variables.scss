@@ -1,0 +1,19 @@
+$white-text-color: #eaeaea;
+$blue-link-color: #9dc4da;
+$dark-bg: #25282b;
+@mixin bottomLine {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background: $blue-link-color;
+  }
+}

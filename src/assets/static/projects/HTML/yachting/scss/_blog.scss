@@ -1,0 +1,53 @@
+.blog {
+  h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+    a {
+      font-size: 12px;
+      text-transform: none;
+      display: inline-block;
+      background: $ligh-blue-color;
+      border-radius: 10px;
+      padding: 6px 23px;
+      color: $blue-color;
+      font-weight: normal;
+      vertical-align: top;
+    }
+  }
+  .blog-item {
+    .blog-img {
+      display: block;
+      overflow: hidden;
+      margin-bottom: 10px;
+      &:hover img {
+        transform: scale(1.3);
+      }
+      img {
+        width: 100%;
+        transition: all .3s;
+      }
+    }
+    .blog-title {
+      color: #000;
+      font-size: 14px;
+      font-family: SFUIText-Bold;
+      font-weight: normal;
+      display: inline-block;
+      line-height: 15px;
+      margin-bottom: 10px;
+    }
+    .blog-content {
+      font-size: 11px;
+      margin-bottom: 10px;
+    }
+    .blog-read-more {
+      font-size: 12px;
+      color: $blue-color;
+      &:hover {
+        color: $dark-blue-color;
+      }
+    }
+  }
+}

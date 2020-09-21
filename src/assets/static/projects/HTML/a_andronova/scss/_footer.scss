@@ -1,0 +1,58 @@
+footer {
+	background: rgba(darken($gray, 50%), .7);
+	padding: 15px 0 5px 0;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	.logo {
+		font-size: 30px;
+		margin-bottom: 20px;
+		a {
+			color: #fff;
+			transition: all .3s;
+			&:hover {
+				color: $text_neon;
+				text-decoration: none;
+			}
+		}
+	}
+	.author {
+		padding-left: 19px;
+		font-size: 16px;
+	}
+	p {
+		margin: 0;
+		i {
+			color: $text_neon;
+			margin-right: 7px;
+		}
+	}
+	.soc_holder {
+		margin-top: 4px;
+		font-size: 33px;
+		i {
+			margin-right: 15px;
+			transition: color .3s;
+			color: #fff;
+			&:hover {
+				color: $text_neon;
+			}
+		}
+	}
+	.developers {
+		color: #fff;
+		font-size: 14px;
+		transition: all .3s;
+		margin-top: 15px;
+		display: block;
+		strong {
+			font-size: 18px;
+		}
+		&:hover {
+			text-decoration: none;
+			color: $text_neon;
+		}
+	}
+}

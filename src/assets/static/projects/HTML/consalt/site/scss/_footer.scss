@@ -1,0 +1,28 @@
+footer {
+  border-top: 2px solid $blue-link-color;
+  text-align: center;
+  padding: 20px 0;
+  background: $dark-bg;
+  color: $white-text-color;
+  .social-icon {
+    display: flex;
+    justify-content: flex-start;
+    ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      li {
+        margin: 0 10px;
+        a {
+          color: #fff;
+          transition: color .3s;
+          font-size: 22px;
+          &:hover {
+            color: $blue-link-color;
+          }
+        }
+      }
+    }
+  }
+}

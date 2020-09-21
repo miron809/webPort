@@ -1,0 +1,170 @@
+.home-window {
+  overflow: hidden;
+  padding: 50px 10px 0;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("img/bg.png") no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 1;
+  }
+  .big-logo-navigation {
+    z-index: 2;
+    position: relative;
+  }
+
+  //center menu
+  .home-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    li {
+      position: absolute;
+      a {
+        color: $white-text-color;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 18px;
+        position: relative;
+        &:hover {
+          color: $blue-link-color;
+        }
+      }
+      &:nth-child(2n+1) {
+        a {
+          padding-right: 50px;
+          &:before {
+            content: '';
+            background: url("img/arrows-1.png") no-repeat;
+            position: absolute;
+            right: 3px;
+            top: 50%;
+            width: 32px;
+            height: 32px;
+            opacity: 1;
+            transition: opacity .3s;
+            transform: translateY(-50%) rotate(180deg);
+          }
+          &:after {
+            content: '';
+            background: url("img/arrows-1.png") no-repeat;
+            background-position: 0 -33px;
+            position: absolute;
+            right: 3px;
+            top: 50%;
+            width: 32px;
+            height: 32px;
+            transform: translateY(-50%) rotate(180deg);
+            opacity: 0;
+            transition: opacity .3s;
+          }
+          &:hover:before {
+            opacity: 0;
+          }
+          &:hover:after {
+            opacity: 1;
+          }
+        }
+      }
+      &:nth-child(2n) {
+        a {
+          padding-left: 50px;
+          &:before {
+            content: '';
+            background: url("img/arrows-1.png") no-repeat;
+            position: absolute;
+            left: 3px;
+            top: 50%;
+            width: 32px;
+            height: 32px;
+            transform: translateY(-50%);
+            transition: opacity .3s;
+          }
+          &:after {
+            content: '';
+            background: url("img/arrows-1.png") no-repeat;
+            background-position: 0 -33px;
+            position: absolute;
+            left: 3px;
+            top: 50%;
+            width: 32px;
+            height: 32px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity .3s;
+          }
+          &:hover:before {
+            opacity: 0;
+          }
+          &:hover:after {
+            opacity: 1;
+          }
+        }
+      }
+    //  position
+      &:nth-child(1) {
+        top: 15%;
+        left: 18%;
+        animation-duration: 2s;
+      }
+      &:nth-child(2) {
+        top: 15%;
+        right: 22%;
+        animation-duration: 2s;
+      }
+      &:nth-child(3) {
+        top: 40%;
+        left: 16%;
+        animation-delay: .3s;
+        animation-duration: 2s;
+      }
+      &:nth-child(4) {
+        top: 40%;
+        right: 15%;
+        animation-delay: .3s;
+        animation-duration: 2s;
+      }
+      &:nth-child(5) {
+        top: 65%;
+        left: 0;
+        animation-delay: .6s;
+        animation-duration: 2s;
+      }
+      &:nth-child(6) {
+        top: 65%;
+        right: 0;
+        animation-delay: .6s;
+        animation-duration: 2s;
+      }
+    }
+  }
+  .big-logo-image {
+    animation-delay: .7s;
+  }
+  .big-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -150px;
+    opacity: 0;
+    animation-delay: 1.2s;
+    animation-duration: 2s;
+  }
+}

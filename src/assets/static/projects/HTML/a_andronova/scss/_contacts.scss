@@ -1,0 +1,28 @@
+.contacts {
+	.adres_holder {
+		h3 {
+			margin-left: 60px;
+			display: inline-block;
+			position: relative;
+			&:before {
+				@include line_neon;
+			}
+		}
+		li {
+			list-style-type: none;
+		}
+	}
+	.form_holder {
+		form {
+			.btn {
+				color: #fff;
+				background: $text_neon;
+				border-color: lighten($gray, 20%);
+				text-transform: uppercase;
+			}
+		}
+		textarea {
+			resize: vertical;
+		}
+	}
+}

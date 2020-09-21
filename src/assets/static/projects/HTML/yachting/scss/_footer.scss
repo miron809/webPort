@@ -1,0 +1,63 @@
+footer {
+  .navbar {
+    font-size: 13px;
+    margin-bottom: 50px;
+    #logo-bottom {
+      margin: 0;
+    }
+  }
+  .mid-footer-block {
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $light-gray-color;
+    .socials-block {
+      overflow: hidden;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        float: left;
+        margin-right: 15px;
+        a {
+          color: $gray-color;
+          transition: color .3s;
+          font-size: 18px;
+          &:hover {
+            color: $blue-color;
+          }
+        }
+      }
+    }
+    .sitemap-menu {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      float: right;
+      li {
+        float: left;
+        margin-left: 50px;
+        a {
+          color: $gray-color;
+          font-size: 10px;
+          transition: color .3s;
+          &:hover {
+            color: $blue-color;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer-block {
+    margin-bottom: 5px;
+    p {
+      font-size: 10px;
+      color: $gray-color;
+      a {
+        color: #000;
+        font-weight: bold;
+      }
+    }
+  }
+}

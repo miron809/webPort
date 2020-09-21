@@ -1,0 +1,29 @@
+body {
+  font-family: SFUIText, helvetica, sans-serif;
+  font-weight: 700;
+  background: #fff;
+}
+#wrapper {
+  min-width: 320px;
+  overflow: hidden;
+  position: relative;
+}
+.container-fluid {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.navbar-collapse {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+*:focus, *:active, *:visited {
+  outline: none !important;
+  text-decoration: none !important;
+}
+.content-holder {
+  margin-bottom: 70px;
+}

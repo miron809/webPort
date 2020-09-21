@@ -1,0 +1,12 @@
+default:
+ description: 
+ tasks:
+  - watch
+img:
+ description:
+ tasks:
+  - imagemin
+prod:
+ description:
+ tasks:
+  - postcss

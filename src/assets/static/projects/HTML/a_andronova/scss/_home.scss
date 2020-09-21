@@ -1,0 +1,155 @@
+.navbar-right .dropdown-menu {
+	right: auto;
+	left: 0;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: 100%;
+}
+.navbar-nav > li > a {
+	outline: none;
+}
+.navbar .navbar-brand i {
+	font-size: 30px;
+	line-height: 24px;
+	margin-right: 5px;
+}
+.carousel-caption span {
+	font-size: 50px;
+}
+.info_title {
+	padding-top: 50px;
+	>h3 {
+		margin-top: 0px;
+	}
+	p, ul {
+		color: $gray;
+	}
+	ul {
+		margin: 0 0 15px 15px;
+		li {
+			position: relative;
+			list-style-type: none;
+			margin-bottom: 5px;
+			&:before {
+				@include circle_neon;
+			}
+		}
+	}
+	.section_title {
+		h3 {
+			font-family: roboto condensed, sans-serif;
+			margin-top: 15px;
+			margin-left: 60px;
+			position: relative;
+			&:before {
+				@include line_neon;
+			}
+		}
+	}
+}
+.specialization {
+	.box {
+		margin-top: 15px;
+		overflow: hidden;
+		.icon_block {
+			float: left;
+			span {
+				font-size: 40px;
+				color: $text_neon;
+				margin-top: 10px;
+			}
+		}
+		.text_block {
+			margin-left: 60px;
+		}
+	}
+}
+.button-group {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 15px;
+	.button {
+		margin-right: 25px;
+		display: inline;
+		position: relative;
+		text-transform: capitalize;
+		cursor: pointer;
+		font-size: 14px;
+		text-transform: uppercase;
+		&:after {
+			content: '/';
+			position: absolute;
+			right: -13px;
+			color: $text_neon;
+			top: -5px;
+			font-size: 20px;
+		}
+	}
+	.is-checked {
+		color: $text_neon;
+	}
+}
+.port_holder {
+	.grid {
+		.element-item {
+			width: 25%;
+			text-align: center;
+			position: relative;
+			.overlay {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba($text_neon, .7);
+				text-align: center;
+				transition: opacity .3s;
+				opacity: 0;
+				&:hover {
+					opacity: 1;
+				}
+				.over_title {
+					color: #fff;
+					text-transform: uppercase;
+					font-size: 16px;
+					position: absolute;
+					top: 15px;
+					right: 15px;
+					left: 15px;
+					bottom: 15px;
+					border: 1px solid #fff;
+					p {
+						margin-top: 33%;
+					}
+				}
+			}
+		}
+	}
+}
+.text_holder {
+	text-indent: 40px;
+	p {
+		color: $gray;
+	}
+}
+@media only screen and (min-width : 1500px) {
+	.element-item {
+		width: 20% !important;
+	}
+}
+@media only screen and (max-width : 1200px) {
+	.element-item {
+		width: 33.33333% !important;
+	}
+}
+@media only screen and (max-width : 768px) {
+	.element-item {
+		width: 50% !important;
+	}
+	#wrapper {
+		padding-bottom: 220px;
+	}
+}
+@media only screen and (max-width : 520px) {
+	.element-item {
+		width: 100% !important;
+	}
+}

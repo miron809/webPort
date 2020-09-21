@@ -1,0 +1,27 @@
+.button-block {
+  background: $dark-bg;
+  text-align: center;
+  color: $white-text-color;
+  padding: 50px 0;
+
+  h2 {
+    @include bottomLine;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    transition: all .3s;
+    &:hover {
+      border-color: $blue-link-color;
+      color: $blue-link-color;
+      transform: scale(1.1);
+    }
+    &:focus {
+      outline: none !important;
+    }
+  }
+}

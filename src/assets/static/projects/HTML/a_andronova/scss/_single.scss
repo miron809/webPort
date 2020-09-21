@@ -1,0 +1,45 @@
+.single_holder {
+	.next_page {
+		margin: 0 0 25px 0;
+		ul {
+			list-style-type: none;
+			font-size: 20px;
+			padding: 0;
+			margin: 0;
+			li {
+				display: inline-block;
+				margin-right: 30px;
+				margin-bottom: 15px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					text-transform: uppercase;
+					color: $gray;
+					transition: color .3s;
+					&:hover {
+						color: $text_neon;
+						text-decoration: none;
+					}
+					&:hover i {
+						transform: scale(1.6);
+					}
+					i {
+						margin: 0 15px;
+						transition: transform .3s;
+					}
+				}
+			}
+		}
+	}
+	.photo_list {
+		list-style-type: none;
+		li {
+			margin-bottom: 25px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

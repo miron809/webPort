@@ -1,0 +1,26 @@
+.page_holder {
+	color: $gray;
+	p {
+		text-indent: 25px;
+	}
+	.alignleft {
+		float: left;
+	}
+	.alignright {
+		float: right;
+	}
+	img {
+		max-width: 40%;
+		margin: 15px;
+	}
+	ul {
+		margin-left: 25px;
+		list-style-type: none;
+		li {
+			position: relative;
+			&:before {
+				@include circle_neon;
+			}
+		}
+	}
+}
